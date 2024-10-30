@@ -79,7 +79,7 @@ resource "google_cloud_run_v2_service" "firepubauditsource" {
 # Service account for Eventarc triggers
 resource "google_service_account" "eventarc_sa" {
   project      = var.project_id
-  account_id   = "fpas-${var.name}"
+  account_id   = "fpas-ea-${var.name}"
   display_name = "firepubauditsource Eventarc (${var.name}) service account"
 }
 

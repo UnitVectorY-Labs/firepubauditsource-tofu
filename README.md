@@ -17,6 +17,7 @@ module "firepubauditsource" {
     artifact_registry_project_id = var.project_id
     firepubauditsource_tag       = "dev"
     database                     = "(default)"
+    database_region              = "nam5"
 }
 ```
 
